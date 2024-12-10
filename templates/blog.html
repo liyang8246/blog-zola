@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="">
-  {{ section.title }}
-</h1>
-<ul>
-  <!-- If you are using pagination, section.pages will be empty.
-       You need to use the paginator object -->  
+<ul class="max-w-lg">
   {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  <div>
+    <a href="{{ page.permalink | safe }}" class="text-2xl text-gray-700 font-bold mb-2">{{ page.title }}</a>
+    <p class="">发布时间: {{ page.date }}</p>
+    <p> {{ page.content | striptags | truncate(length=128) }} </p>
+  </div>
+  <div class="divider"></div>
   {% endfor %}
 </ul>
 {% endblock content %}
