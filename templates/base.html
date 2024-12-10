@@ -3,51 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <title>LiYang`s Blog</title>
-    <link
-      href="{{get_url(path='styles/tailwind.css',cachebust=true)}}"
-      rel="stylesheet"
-    />
+    <link href="{{get_url(path='styles/tailwind.css',cachebust=true)}}" rel="stylesheet" />
   </head>
 
   <body>
-    <nav
-      class="navbar rounded-box flex w-full gap-2 shadow max-md:flex-col md:items-center"
-    >
-      <div class="flex w-full items-center justify-between">
-        <div class="navbar-start items-center justify-between max-md:w-full">
-          <a
-            class="link text-base-content/90 link-neutral text-xl font-semibold no-underline"
-            href="#"
-          >
-            FlyonUI
-          </a>
-          <div class="md:hidden">
-            <button
-              type="button"
-              class="collapse-toggle btn btn-outline btn-secondary btn-sm btn-square"
-              data-collapse="#default-navbar-collapse"
-              aria-controls="default-navbar-collapse"
-              aria-label="Toggle navigation"
-            >
-              <span
-                class="icon-[tabler--menu-2] collapse-open:hidden size-4"
-              ></span>
-              <span
-                class="icon-[tabler--x] collapse-open:block hidden size-4"
-              ></span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        id="default-navbar-collapse"
-        class="md:navbar-end collapse hidden grow basis-full overflow-hidden transition-[height] duration-300 max-md:w-full"
-      >
-        <ul class="menu md:menu-horizontal gap-2 p-0 text-base">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
+    <nav class="navbar flex justify-between w-full gap-2 shadow-sm">
+      <a href="/"><button class="btn btn-text font-bold text-xl">LiYang8246</button></a>
+      <div>
+        <a href="/"><button class="btn btn-text">Home</button></a>
+        <a href="/"><button class="btn btn-text">Blog</button></a>
+        <a href="/"><button class="btn btn-text">Friends</button></a>
       </div>
     </nav>
     {% block content %} {% endblock %}
