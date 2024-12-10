@@ -80,3 +80,10 @@ zola build
     "outputDirectory": "public"
 }
 ```
+
+## gitignore 参考
+```
+node_modules
+public
+tailwind.css
+```
