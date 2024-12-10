@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="{{ get_url(path='img/profile.jpg') }}">
-    <title>LiYang`s Blog</title>
-    <link href="{{get_url(path='styles/tailwind.css')}}" rel="stylesheet" />
-  </head>
 
-  <body class="flex flex-col min-h-screen">
-      <!-- Head -->
-      <nav class="navbar flex justify-start w-full gap-2 bg-base-200 shadow-sm">
-        <a href="/"><button class="btn btn-text font-bold text-xl">LiYang8246</button></a>
-        <div>
-          <a href="/blog"><button class="btn btn-text">Blog</button></a>
-          <a href="/"><button class="btn btn-text">Friends</button></a>
-        </div>
-      </nav>
-      <!-- Content -->
-      <div class="min-h-full flex-grow flex flex-col justify-center items-center bg-gray-100"> 
-        {% block content %} {% endblock %}
-      </div>
-      <!-- Footer -->
-      <footer class="footer items-center px-6 py-4 bg-base-200 shadow-sm">
-        <aside class="grid-flow-col items-center">
-          <p>&copy;2024 <a class="link link-hover font-medium" href="#">FlyonUI</a></p>
-        </aside>
-        <nav class="text-base-content/90 grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <a class="link link-hover" href="/">License</a>
-        </nav>
-      </footer>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="{{ get_url(path='img/profile.jpg') }}">
+  <title>LiYang`s Blog</title>
+  <link href="{{get_url(path='styles/tailwind.css')}}" rel="stylesheet" />
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script src="https://giscus.app/client.js" data-repo="liyang8246/blog-zola" data-repo-id="R_kgDONbNY8w"
+    data-category="Announcements" data-category-id="DIC_kwDONbNY884ClGl7" data-mapping="pathname" data-strict="0"
+    data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme"
+    data-lang="zh-CN" crossorigin="anonymous" async>
+    </script>
+</head>
 
-  </body>
+<body class="flex flex-col min-h-screen">
+  <!-- Head -->
+  <nav class="navbar flex justify-start w-full gap-2 bg-base-200 shadow-sm">
+    <a href="/"><button class="btn btn-text font-bold text-xl">LiYang8246</button></a>
+    <div>
+      <a href="/blog"><button class="btn btn-text">Blog</button></a>
+      <a href="/"><button class="btn btn-text">Friends</button></a>
+    </div>
+  </nav>
+  <!-- Content -->
+  <div class="min-h-full flex-grow flex flex-col justify-center items-center bg-gray-100">
+    {% block content %} {% endblock %}
+  </div>
+  <!-- Footer -->
+  <footer class="footer items-center px-6 py-4 bg-base-200 shadow-sm">
+    <aside class="grid-flow-col items-center">
+      <p>&copy;2024 <a class="link link-hover font-medium" href="#">FlyonUI</a></p>
+    </aside>
+    <nav class="text-base-content/90 grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+      <a class="link link-hover" href="/">License</a>
+    </nav>
+  </footer>
+
+</body>
+
 </html>

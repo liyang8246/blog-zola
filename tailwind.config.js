@@ -10,6 +10,7 @@ module.exports = {
   variants: {},
   plugins: [
     require("flyonui"),
+    require('@tailwindcss/typography'),
     addDynamicIconSelectors()
   ]
 };
