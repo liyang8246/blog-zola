@@ -1,7 +1,7 @@
 base_url = "https://blog.eromanga.top"
 compile_sass = false
 build_search_index = false
-
+default_language = "zh"
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
