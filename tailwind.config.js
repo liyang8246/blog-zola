@@ -1,3 +1,5 @@
+const { addDynamicIconSelectors } = require('@iconify/tailwind')
+
 module.exports = {
   content: [
     "./templates/**/*.html",
@@ -6,5 +8,8 @@ module.exports = {
     extend: {}
   },
   variants: {},
-  plugins: [require("flyonui"),]
+  plugins: [
+    require("flyonui"),
+    addDynamicIconSelectors()
+  ]
 };
