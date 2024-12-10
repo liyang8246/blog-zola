@@ -1,8 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="text-red-500">
-  This is my blog made with Zola.
+<div class="flex space-x-12">
+  <img src="{{get_url(path='img/profile.jpg')}}" class="rounded-full w-32 border" alt="头像">
+  <div>
+    <div class="text-xl font-bold">👋 This is @LiYang8246!</div>
+    <div>
+      <a href="" class="<span class="icon-[mdi--github]" />"></a>
+    </div>
+  </div>
 </div>
-<p><a href="{{ get_url(path='@/blog/_index.md') }}">Posts</a>.</p>
 {% endblock content %}
+<!-- <p><a href="{{ get_url(path='@/blog/_index.md') }}">Posts</a>.</p> -->
