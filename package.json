@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "flyonui": "^1.1.0",
+    "tailwindcss": "^3.4.16"
+  }
+}

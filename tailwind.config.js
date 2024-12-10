@@ -1,8 +1,10 @@
 module.exports = {
-  content: ["./templates/**/*.html"],
+  content: [
+    "./templates/**/*.html",
+  ],
   theme: {
     extend: {}
   },
   variants: {},
-  plugins: []
+  plugins: [require("flyonui"),]
 };
