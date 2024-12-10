@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% block content %}
-<div class="max-w-xl w-full flex flex-col space-y-4">
+<div class="max-w-2xl w-full flex flex-col space-y-4">
   <div class="flex items-center justify-around">
     <img src="{{get_url(path='img/profile.jpg')}}" class="rounded-full w-32 h-32 border" alt="头像" />
     <div class="flex flex-col space-y-3">
@@ -10,10 +10,11 @@
         <span class="badge badge-neutral"><a href="" class="icon-[mdi--email] text-xl"></a> Email </span>
       </div>
       <div class="font-bold">⚒ Skills</div>
-      <div>🥪 Front End / 🥗 Backend / 🍑 Machine Learning</div>
+      <div> 🌐 FrontEnd / 🖥️ Backend </div>
+      <div> 🧠 Machine Learning / 🤖 Embedded </div>
     </div>
   </div>
-  <div class="font-bold mr-auto">🍉 Tech Stack</div>
+  <div class="font-bold mr-auto">🔧 Tech Stack</div>
   <div class="flex flex-wrap">
     <!-- Languages -->
     <span class="text-5xl mr-2 mb-2 icon-[skill-icons--rust]"></span>
@@ -33,7 +34,7 @@
     <span class="text-5xl mr-2 mb-2 icon-[skill-icons--pytorch-dark]"></span>
     <span class="text-5xl mr-2 mb-2 icon-[skill-icons--opencv-dark]"></span>
   </div>
-  <div class="font-bold mr-auto">🔨 Tool i use</div>
+  <div class="font-bold mr-auto">🔨 Tools I Use</div>
   <div class="flex flex-wrap">
     <!-- Linux -->
     <span class="text-5xl mr-2 mb-2 icon-[skill-icons--linux-dark]"></span>
@@ -44,6 +45,7 @@
     <span class="text-5xl mr-2 mb-2 icon-[skill-icons--git]"></span>
     <span class="text-5xl mr-2 mb-2 icon-[skill-icons--github-dark]"></span>
     <span class="text-5xl mr-2 mb-2 icon-[skill-icons--githubactions-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--vercel-dark]"></span>
     <!-- Cloud -->
     <span class="text-5xl mr-2 mb-2 icon-[skill-icons--docker]"></span>
     <span class="text-5xl mr-2 mb-2 icon-[skill-icons--nginx]"></span>
@@ -63,6 +65,13 @@
     <!-- Rust -->
     <span class="text-5xl mr-2 mb-2 icon-[skill-icons--tauri-dark]"></span>
   </div>
+  <div class="font-bold mr-auto">🐙 GitHub Stats</div>
+  <div class="flex w-full justify-between">
+    <img class="h-[11rem]" src="https://github-readme-stats.vercel.app/api?username=liyang8246" />
+    <img class="h-[11rem]"
+      src="https://github-readme-stats.vercel.app/api/top-langs?username=liyang8246&layout=compact&langs_count=8" />
+  </div>
+
 </div>
 {% endblock content %}
 <!-- <p><a href="{{ get_url(path='@/blog/_index.md') }}">Posts</a>.</p> -->
