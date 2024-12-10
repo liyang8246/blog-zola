@@ -1,13 +1,67 @@
-{% extends "base.html" %}
-
-{% block content %}
-<div class="flex space-x-12">
-  <img src="{{get_url(path='img/profile.jpg')}}" class="rounded-full w-32 border" alt="头像">
-  <div>
-    <div class="text-xl font-bold">👋 This is @LiYang8246!</div>
-    <div>
-      <a href="" class="<span class="icon-[mdi--github]" />"></a>
+{% extends "base.html" %} {% block content %}
+<div class="max-w-xl w-full flex flex-col space-y-4">
+  <div class="flex items-center justify-around">
+    <img src="{{get_url(path='img/profile.jpg')}}" class="rounded-full w-32 h-32 border" alt="头像" />
+    <div class="flex flex-col space-y-3">
+      <div class="text-xl font-bold">👋 This is @LiYang8246!</div>
+      <div class="flex space-x-4">
+        <span class="badge badge-neutral"><a href="" class="icon-[mdi--github] text-xl"></a> GitHub </span>
+        <span class="badge badge-neutral"><a href="" class="icon-[mdi--wechat] text-xl"></a> WeChat </span>
+        <span class="badge badge-neutral"><a href="" class="icon-[mdi--email] text-xl"></a> Email </span>
+      </div>
+      <div class="font-bold">⚒ Skills</div>
+      <div>🥪 Front End / 🥗 Backend / 🍑 Machine Learning</div>
     </div>
+  </div>
+  <div class="font-bold mr-auto">🍉 Tech Stack</div>
+  <div class="flex flex-wrap">
+    <!-- Languages -->
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--rust]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--python-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--c]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--cpp]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--html]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--css]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--javascript]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--lua-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--markdown-dark]"></span>
+    <!-- Others -->
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--vuejs-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--alpinejs-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--arduino]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--bash-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--pytorch-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--opencv-dark]"></span>
+  </div>
+  <div class="font-bold mr-auto">🔨 Tool i use</div>
+  <div class="flex flex-wrap">
+    <!-- Linux -->
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--linux-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--arch-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--debian-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--raspberrypi-dark]"></span>
+    <!-- Git -->
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--git]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--github-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--githubactions-dark]"></span>
+    <!-- Cloud -->
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--docker]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--nginx]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--cloudflare-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--mysql-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--postgresql-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--sqlite]"></span>
+    <!-- JavaScript -->
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--nodejs-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--tailwindcss-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--vite-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--deno-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--npm-dark]"></span>
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--pnpm-dark]"></span>
+    <!-- Python -->
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--anaconda-dark]"></span>
+    <!-- Rust -->
+    <span class="text-5xl mr-2 mb-2 icon-[skill-icons--tauri-dark]"></span>
   </div>
 </div>
 {% endblock content %}

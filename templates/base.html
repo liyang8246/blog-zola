@@ -9,16 +9,15 @@
 
   <body class="flex flex-col min-h-screen">
       <!-- Head -->
-      <nav class="navbar flex justify-between w-full gap-2 bg-base-200 shadow-sm">
+      <nav class="navbar flex justify-start w-full gap-2 bg-base-200 shadow-sm">
         <a href="/"><button class="btn btn-text font-bold text-xl">LiYang8246</button></a>
         <div>
-          <a href="/"><button class="btn btn-text">Home</button></a>
-          <a href="/"><button class="btn btn-text">Blog</button></a>
+          <a href="/blog"><button class="btn btn-text">Blog</button></a>
           <a href="/"><button class="btn btn-text">Friends</button></a>
         </div>
       </nav>
       <!-- Content -->
-      <div class="min-h-full flex-grow flex justify-center items-center"> 
+      <div class="min-h-full flex-grow flex flex-col justify-center items-center bg-gray-100"> 
         {% block content %} {% endblock %}
       </div>
       <!-- Footer -->
