@@ -1,17 +1,23 @@
 {% extends "base.html" %} {% block content %}
-<h1 class="hidden"> LiYang8246的个人主页 </h1>
-<div class="max-w-2xl w-full flex flex-col space-y-4 px-2 lg:px-0">
-  <div class="flex items-center justify-around">
-    <img src="{{get_url(path='img/profile.jpg')}}" class="rounded-full w-24 h-24 lg:w-32 lg:h-32 border" alt="头像" />
+<h1 class="hidden">LiYang8246的个人主页</h1>
+<div class="max-w-2xl w-full flex flex-col space-y-4 px-2 lg:px">
+  <div class="flex items-center lg:justify-around">
+    <img src="{{get_url(path='img/profile.jpg')}}" class="rounded-full hidden lg:block w-32 h-32 mr-8 border" alt="头像" />
     <div class="flex flex-col space-y-3">
       <div class="text-xl font-bold">👋 This is @LiYang8246!</div>
       <div class="flex space-x-4">
-        <span class="badge badge-neutral"><a href="https://github.com/liyang8246" class="icon-[mdi--github] text-xl"></a> GitHub </span>
+        <span class="badge badge-neutral"
+          ><a href="https://github.com/liyang8246" class="icon-[mdi--github] text-xl"></a> GitHub
+        </span>
         <span class="badge badge-neutral"><a href="" class="icon-[mdi--email] text-xl"></a> Email </span>
       </div>
       <div class="font-bold">⚒ Skills</div>
-      <div> 🌐 FrontEnd / 🖥️ Backend </div>
-      <div> 🧠 Machine Learning / 🤖 Embedded </div>
+      <div class="flex flex-wrap">
+        <div class="mr-6">🌐 FrontEnd</div>
+        <div class="mr-6">🖥️ Backend</div>
+        <div class="mr-6">🧠 Machine Learning</div>
+        <div class="mr-6">🤖 Embedded</div>
+      </div>
     </div>
   </div>
   <div class="font-bold mr-auto">🔧 Tech Stack</div>
@@ -67,11 +73,13 @@
   </div>
   <div class="font-bold mr-auto">🐙 GitHub Stats</div>
   <div class="flex flex-col lg:flex-row w-full justify-between">
-    <img class="h-[10.5rem]" src="https://github-readme-stats.vercel.app/api?username=liyang8246" alt="GitHub Stats"/>
-    <img class="h-[10.5rem] mr-2"
-      src="https://github-readme-stats.vercel.app/api/top-langs?username=liyang8246&layout=compact&langs_count=8" alt="Top Langs" />
+    <img class="h-[10.5rem]" src="https://github-readme-stats.vercel.app/api?username=liyang8246" alt="GitHub Stats" />
+    <img
+      class="h-[10.5rem] mr-2"
+      src="https://github-readme-stats.vercel.app/api/top-langs?username=liyang8246&layout=compact&langs_count=8"
+      alt="Top Langs"
+    />
   </div>
-
 </div>
 {% endblock content %}
 <!-- <p><a href="{{ get_url(path='@/blog/_index.md') }}">Posts</a>.</p> -->
