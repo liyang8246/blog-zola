@@ -1,6 +1,7 @@
 +++
 title = "使用zola + tailwindcss构建博客"
 date = 2024-12-10
+description = "zola tailwindcss blog"
 +++
 
 ## 安装依赖
