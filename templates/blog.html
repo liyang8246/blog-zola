@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<ul class="max-w-lg">
+<ul class="max-w-lg px-2">
   {% for page in section.pages %}
   <div>
     <a href="{{ page.permalink | safe }}" class="text-2xl text-base-content font-bold mb-2">{{ page.title }}</a>
