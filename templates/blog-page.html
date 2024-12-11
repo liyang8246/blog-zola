@@ -1,35 +1,19 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="my-8 w-full flex justify-around">
-  <!-- {% if page.toc %}
-  <div class="sticky top-0">
-    {% for item in page.toc %}
-    {% if item.level == 2 %}
-    <a href="{{ item.permalink | safe }}" class="block">{{ item.title }}</a>
-    {% for child in item.children %}
-    {% if child.level == 3 %}
-    <a href="{{ child.permalink | safe }}" class="block ml-4">{{ child.title }}</a>
-    {% endif %}
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
+<div class="my-8 w-screen px-2 lg:px-0 lg:w-fit">
+<div class="max-w-fit mx-auto">
+  <h1 class="text-4xl text-gray-700 font-bold mb-2">{{ page.title }}</h1>
+  <div class="flex flex-wrap space-x-4">
+    <p class="">发布时间: {{ page.date }}</p>
+    <span id="busuanzi_container_page_pv">总阅读量: <span id="busuanzi_value_page_pv"></span>次</span>
   </div>
-  {% endif %} -->
-  <div>
-    <h1 class="text-4xl text-gray-700 font-bold mb-2">{{ page.title }}</h1>
-    <div class="flex flex-wrap space-x-4">
-      <p class="">发布时间: {{ page.date }}</p>
-      <span id="busuanzi_container_page_pv">总阅读量: <span id="busuanzi_value_page_pv"></span>次</span>
-    </div>
-    <article class="prose prose-lg mt-4">
-      {{ page.content | safe }}
-    </article>
-    <div class="divider divider-neutral"></div>
-    <div class="giscus" id="giscus-thread"></div>
-  </div>
-
-  <!-- <div></div> -->
+  <article class="prose lg:prose-lg mt-4">
+    {{ page.content | safe }}
+  </article>
+  <div class="divider divider-neutral"></div>
+  <!-- <div class="giscus" id="giscus-thread"></div> -->
+</div>
 </div>
 
 {% endblock content %}
