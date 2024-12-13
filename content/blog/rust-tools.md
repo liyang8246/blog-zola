@@ -5,6 +5,7 @@ description = "cargo tools"
 +++
 
 ## 简单介绍下
+
 `duf`: 一个现代化的磁盘使用情况查看工具
 
 `zellij`: 一个强大的终端窗口管理器
@@ -16,24 +17,29 @@ description = "cargo tools"
 `bottom`: 一个多功能的系统监控工具
 
 ## 一键安装
+
 ```bash
 cargo install duf zellij starship eza bottom
 ```
 
 但在这之前, 需要安装如下依赖:
-``` bash
+
+```bash
 cmake
 ```
 
 ## 简单配置下
+
 写入 `~/.bashrc` :
 
 ### starship
+
 ```bash
 eval "$(starship init bash)"
 ```
 
 ### eza
+
 ```bash
 alias ls='eza --icons'
 alias ll='eza --icons -l'
