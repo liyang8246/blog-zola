@@ -25,6 +25,7 @@ description = "Python Windows"
 ```bash
 scoop install python
 ```
+
 没错, 仅需一个命令就安装好了! 不需要任何其他操作
 
 如果你需要安装依赖, 可以在终端中直接使用 pip 安装
@@ -45,7 +46,7 @@ PS C:\Users\LiYang> python main.py
 
 运行 `scoop install miniconda3` 安装 miniconda (相当于精简版的Anaconda)
 
-``` bash
+```bash
 PS C:\Users\LiYang> scoop install miniconda3
 Installing 'miniconda3' (24.9.2-0) [64bit] from 'extras' bucket
 Miniconda3-py312_24.9.2-0-Windows-x86_64.exe (85.7 MB) [=====================================================] 100%
@@ -73,20 +74,24 @@ miniconda3-4.12.0 from the Versions bucket.
 
 安装成功后, 在 powershell 中初始化 conda
 
-``` bash
+```bash
 conda init powershell
 ```
 
 此时重新开启一个终端, 可以看到提示符前已经有了一个 `base`
+
 ```bash
 (base) PS C:\Users\LiYang>
 ```
+
 在任何情况下都不推荐对 base 环境进行任何操作, 你需要新建一个环境
+
 ```bash
 conda create -n env_name python=3.xx
 ```
 
 比如:
+
 ```bash
 (base) PS C:\Users\LiYang> conda create -n scicomp python=3.11       # 创建名为 scicomp python版本为 3.11 的环境
 ... 创建过程

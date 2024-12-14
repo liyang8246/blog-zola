@@ -11,6 +11,7 @@ description = "prerequisites"
 - 如果实在要寻求帮助 [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
 
 ## 足够大的 C盘
+
 - 你大概需要为编程环境留出10G左右的空闲空间
 - 本文章中提到的所有软件都应安装在默认路径, 否则常会导致各种怪问题
 - 另一方面 安装在默认路径可以更方便的管理环境
