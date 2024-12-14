@@ -11,7 +11,7 @@ description = "prerequisites"
 - 如果实在要寻求帮助 [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
 
 ## 足够大的 C盘
-
+- 你大概需要为编程环境留出10G左右的空闲空间
 - 本文章中提到的所有软件都应安装在默认路径, 否则常会导致各种怪问题
 - 另一方面 安装在默认路径可以更方便的管理环境
 - 当然 如果你觉得你有能力管理好 以上当屁处理
@@ -55,5 +55,5 @@ description = "prerequisites"
 如果你这些都准备好了 那么我们继续吧
 
 - [python](/environment-setup/python)
-- [c/c++](/environment-setup/c-cpp)
-- [mysql](/environment-setup/mysql)
+- [c/c++](/environment-setup/c-cpp) 未完成
+- [mysql](/environment-setup/mysql) 未完成
