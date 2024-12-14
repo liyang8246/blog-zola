@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msvalidate.01" content="1D1A36778D7D4E95162D6A542A9D17F7" />
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %} {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords }}" />
+    {% endif %}
     <link rel="icon" href="{{ get_url(path='img/profile.jpg') }}" />
     <title>LiYang`s Blog</title>
     <link href="{{get_url(path='styles/tailwind.css')}}" rel="stylesheet" />
@@ -26,7 +32,6 @@
       crossorigin="anonymous"
       async
     ></script>
-    <meta name="msvalidate.01" content="1D1A36778D7D4E95162D6A542A9D17F7" />
   </head>
 
   <body class="flex flex-col min-h-screen">
