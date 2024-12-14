@@ -57,4 +57,4 @@ description = "prerequisites"
 
 - [python](/environment-setup/python)
 - [c/c++](/environment-setup/c-cpp) 未完成
-- [mysql](/environment-setup/mysql) 未完成
+- [mysql](/environment-setup/mysql) 

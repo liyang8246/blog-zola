@@ -14,4 +14,4 @@ description = "environment-setup"
 
 ## mysql
 
-[mysql配置教程](/environment-setup/mysql) 未完成
+[mysql配置教程](/environment-setup/mysql)
