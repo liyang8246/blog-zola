@@ -1,7 +1,7 @@
 +++
 title = "一切的前提"
 date = 2024-12-14
-description = "cargo tools"
+description = "prerequisites"
 +++
 
 ## 保持良好的心态
