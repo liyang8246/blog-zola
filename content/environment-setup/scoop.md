@@ -13,6 +13,7 @@ description = "cargo tools"
 - [scoop](https://scoop.sh) Windows下的第三方包管理器 好用 也是本文主题
 
 ## 安装 scoop
+
 进入[scoop](https://scoop.sh)官网, 我们可以看到两行命令:
 
 ```bash
@@ -48,6 +49,7 @@ Type 'scoop help' for instructions.
 ```
 
 我们可以运行 `scoop --version` 检查是否安装成功, 如果失败了, 请检查网络连接再重试
+
 ```bash
 PS C:\Users\LiYang> scoop --version
 Current Scoop version:
@@ -136,7 +138,7 @@ To create file-associations for .git* and .sh files, run
 - `scoop bucket add extras`
 - `scoop bucket add java`
 
-``` bash
+```bash
 PS C:\Users\LiYang> scoop bucket add extras
 Checking repo... OK
 The extras bucket was added successfully.
