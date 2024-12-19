@@ -1,7 +1,7 @@
 +++
 title = "一切的前提"
 date = 2024-12-14
-description = "prerequisites"
+description = "一切的前提"
 +++
 
 ## 保持良好的心态
@@ -57,4 +57,4 @@ description = "prerequisites"
 
 - [python](/environment-setup/python)
 - [c/c++](/environment-setup/c-cpp) 未完成
-- [mysql](/environment-setup/mysql) 
+- [mysql](/environment-setup/mysql)

@@ -1,7 +1,7 @@
 +++
 title = "如何优雅地配置环境"
 date = 2024-12-14
-description = "environment-setup"
+description = "如何优雅地配置环境"
 +++
 
 ## c/c++

@@ -1,10 +1,11 @@
 +++
 title = "一行命令速通mysql"
 date = 2024-12-15
-description = "mysql"
+description = "一行命令速通mysql"
 +++
 
 ## 安装 mysql
+
 ```bash
 scoop install mysql
 ```

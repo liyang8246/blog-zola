@@ -1,7 +1,7 @@
 +++
 title = "vscode 的基本使用"
 date = 2024-12-14
-description = "vscode"
+description = "vscode 的基本使用"
 +++
 
 ## 安装 vscode

@@ -1,7 +1,7 @@
 +++
 title = "一些常用的 rust 命令行工具"
 date = 2024-12-13
-description = "cargo tools"
+description = "一些常用的 rust 命令行工具"
 +++
 
 ## 简单介绍下

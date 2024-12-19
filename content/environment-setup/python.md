@@ -1,7 +1,7 @@
 +++
 title = "在 Windows 上速通 Python 环境配置"
 date = 2024-12-14
-description = "Python Windows"
+description = "在 Windows 上速通 Python 环境配置"
 +++
 
 ## 在开始之前

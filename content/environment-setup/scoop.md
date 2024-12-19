@@ -1,7 +1,7 @@
 +++
 title = "在 windows 中使用 scoop 管理软件包"
 date = 2024-12-14
-description = "scoop"
+description = "在 windows 中使用 scoop 管理软件包"
 +++
 
 在手机上我们用应用商店安装软件, 在电脑上我们可以用 steam 下载游戏, 但为什么没有一款软件可以方便的安装/卸载编程所需的环境呢?
